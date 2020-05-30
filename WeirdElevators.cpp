@@ -39,7 +39,7 @@ ll getCount(ll ele,ll m){
     ll i=0;
     ll count=0;
     while(ele!=1  && i<allPrimes.size()){
-        if(allPrimes[i]>=m && ele%allPrimes[i]==0)return -1;
+        if(allPrimes[i]>m )return -1;
         if(ele%allPrimes[i]!=0){
             i++;
         }
